@@ -223,7 +223,6 @@ GameObject:
   - component: {fileID: 599916904}
   - component: {fileID: 599916903}
   - component: {fileID: 599916902}
-  - component: {fileID: 599916906}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -310,30 +309,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &599916906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599916901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95090eefe50e77847b9b4f3eec29fea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractableStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  _proximityZone: {fileID: 0}
-  _contactZone: {fileID: 0}
-  _actionZone: {fileID: 0}
-  _contactTests: 
-  _buttonPlaneCenter: {fileID: 0}
-  _makeSureToolIsOnPositiveSide: 1
-  _localButtonDirection: {x: 0, y: -1, z: 0}
-  _allValidToolsTags: ffffffff
-  _allowMultipleNearFieldInteraction: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +438,7 @@ PrefabInstance:
     - target: {fileID: 1219535285155967769, guid: 9a01f7506eb1ec040a56c09221abfd79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0713
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1219535285155967769, guid: 9a01f7506eb1ec040a56c09221abfd79,
         type: 3}
@@ -953,7 +928,7 @@ PrefabInstance:
     - target: {fileID: 701090034984534447, guid: 66006b1c795c53241bfa59debd981b41,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4088
+      value: -0.333
       objectReference: {fileID: 0}
     - target: {fileID: 701090034984534447, guid: 66006b1c795c53241bfa59debd981b41,
         type: 3}
@@ -1069,7 +1044,7 @@ PrefabInstance:
     - target: {fileID: 1219535285155967769, guid: 9a01f7506eb1ec040a56c09221abfd79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.387
+      value: 0.333
       objectReference: {fileID: 0}
     - target: {fileID: 1219535285155967769, guid: 9a01f7506eb1ec040a56c09221abfd79,
         type: 3}
@@ -1123,3 +1098,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a01f7506eb1ec040a56c09221abfd79, type: 3}
+--- !u!1001 &8013173020965332213
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764337, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013173021266764342, guid: aeb086ac1a6a637458e65d2ed7d9ba48,
+        type: 3}
+      propertyPath: m_Name
+      value: VRButton
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aeb086ac1a6a637458e65d2ed7d9ba48, type: 3}
