@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -15,7 +16,7 @@ public class GestureAction : MonoBehaviour
 {
     public List<String> gestureNames = new List<string>();
 
-    private List<String> gestureOrder = new List<string>();
+    public List<String> gestureOrder = new List<string>();
 
     public int lenght = 4;
     
@@ -35,12 +36,31 @@ public class GestureAction : MonoBehaviour
         {
             materials.Add(mat.Name, mat.Material);
         }
-        displayRender.material = materials[gestureNames.First()];
+       
 
         for (int i = 0; i < lenght; i++)
         {
-            gestureOrder.Add(gestureNames[Random.Range(0, gestureNames.Count)]);
+  
+            String newName = gestureNames[Random.Range(0, gestureNames.Count)];
+            if (gestureOrder.Count > 0)
+            {
+                if (!newName.Equals(gestureOrder.Last()))
+                {
+                    gestureOrder.Add(newName);
+                }
+                else
+                {
+                    i--;
+                }   
+            }
+            else
+            {
+                gestureOrder.Add(newName);
+            }
+
         }
+        
+        displayRender.material = materials[gestureOrder.First()];
     }
 
     // Update is called once per frame
