@@ -24,7 +24,7 @@ public class BallReset : MonoBehaviour
          if (col.gameObject.name == "Plane")
         {
             Debug.Log("Log");
-            ball.GetComponent<Rigidbody>().freezeRotation = true;
+            ball.transform.Rotate(0, 0, 0);
             ball.transform.position = resetPos;
         }
     }
